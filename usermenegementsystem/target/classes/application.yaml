@@ -1,0 +1,25 @@
+
+
+server:
+  port: 8096
+spring:
+  datasource:
+             driver-class-name:  org.postgresql.Driver
+             username: postgres
+             password: Ii250405
+             url: jdbc:postgresql://localhost:5432/postgres
+  jpa:
+    hibernate:
+        ddl-auto: update
+    show-sql: false
+
+
+#spring:
+#  sql:
+#    init:
+#      mode: always
+#  docker:
+#    compose:
+#      enabled: true
+#      profiles:
+#        active: pg_14
